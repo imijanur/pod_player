@@ -40,6 +40,7 @@ class PodVideoPlayer extends StatefulWidget {
   final PodProgressBarConfig podProgressBarConfig;
   final PodPlayerLabels podPlayerLabels;
   final Widget Function(OverLayOptions options)? overlayBuilder;
+  final Widget? overLayWidget;
   final Widget Function()? onVideoError;
   final Widget? videoTitle;
   final Color? backgroundColor;
@@ -64,6 +65,7 @@ class PodVideoPlayer extends StatefulWidget {
     this.podProgressBarConfig = const PodProgressBarConfig(),
     this.podPlayerLabels = const PodPlayerLabels(),
     this.overlayBuilder,
+    this.overLayWidget,
     this.videoTitle,
     this.matchVideoAspectRatioToFrame = false,
     this.matchFrameAspectRatioToVideo = false,
@@ -86,6 +88,7 @@ class PodVideoPlayer extends StatefulWidget {
       ..podPlayerLabels = podPlayerLabels
       ..alwaysShowProgressBar = alwaysShowProgressBar
       ..podProgressBarConfig = podProgressBarConfig
+      ..overLayWidget = overLayWidget
       ..overlayBuilder = overlayBuilder
       ..videoTitle = videoTitle
       ..onToggleFullScreen = onToggleFullScreen
