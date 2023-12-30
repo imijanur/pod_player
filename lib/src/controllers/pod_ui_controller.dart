@@ -4,6 +4,7 @@ class _PodUiController extends _PodBaseController {
   bool alwaysShowProgressBar = true;
   PodProgressBarConfig podProgressBarConfig = const PodProgressBarConfig();
   Widget Function(OverLayOptions options)? overlayBuilder;
+  Widget? overLayWidget;
   Widget? videoTitle;
   DecorationImage? videoThumbnail;
 
